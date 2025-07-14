@@ -1,6 +1,7 @@
 import React from 'react'
 import BackgroundImg from "../assets/pizza.jpeg"
 import Fashion from '../assets/fasionbakgrnd.jpg'
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Medbackgrnd from '../assets/medbackgrnd.jpg'
 
@@ -13,7 +14,7 @@ function Home() {
 
       <div className='position-absolute top-50 start-50 translate-middle text-center text-white'>
         <h1 className='display-4 mb-3 fw-bolder'>SpeedyShaq Delivery</h1>
-        <button className='btn btn-danger px-4 py-2 fs-5'>Foods</button>
+        <Link to="/foodlanding"><button className='btn btn-danger px-4 py-2 fs-5'>Foods</button></Link>
       </div>
     </div>
 
@@ -21,7 +22,7 @@ function Home() {
       <img src={Fashion} alt="" className='d-block w-100 h-100 object-fit-cover'/>
       <div className='position-absolute top-50 start-50 translate-middle text-center text-white'>
         <h1 className='display-4 mb-3 fw-bolder'>Explore Fashion</h1>
-        <button className='btn btn-danger px-4 py-2 fs-5'>Fashion</button>
+        <Link to='/fashionlanding'><button className='btn btn-danger px-4 py-2 fs-5'>Fashion</button></Link>
       </div>
     </div>
 
@@ -29,7 +30,7 @@ function Home() {
         <img src={Medbackgrnd} alt="" className='d-block w-100 h-100 object-fit-cover' />
         <div className='position-absolute top-50 start-50 translate-middle text-center text-white'>
           <h1 className='display-4 mb-3 fw-bolder'>Explore Meds</h1>
-          <button className='btn btn-danger px-4 py-2 fs-5'>Meds</button>
+          <Link to='/medlanding'><button className='btn btn-danger px-4 py-2 fs-5'>Meds</button></Link>
         </div>
       </div>
 

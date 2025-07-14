@@ -31,7 +31,7 @@ function Medlanding() {
 
       <div className='col-md-4 text-center  '>
       <h4 className='font-weight-bold'><u>Vitamins</u></h4>
-        <img src={Vitamin} alt="" className='img-fluid h-50 rounded'/>
+        <img src={Vitamin} alt="" className='img-fluid h-50 rounded'/><br />
         <Link to="/vitamins">
         <button  className='purple-button'>Vitamins</button>
         </Link>
